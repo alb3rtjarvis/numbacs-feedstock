@@ -1,5 +1,5 @@
 {% set name = "numbacs" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/numbacs-{{ version }}.tar.gz
-  sha256: 4177b3b55675d422b6e053bcee76f788f0d37a6c6fc17d76b73977613a49031b
+  sha256: e8b84cc10991a160ae476163fd91466144492d651bbca3cd9e8eafc1bcdccb8a
 
 build:
   noarch: python
@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.11,<3.12
+    - python >=3.10,<3.12
     - hatchling
     - pip
   run:
-    - python >=3.11,<3.12
+    - python >=3.10,<3.12
     - interpolation >=2.2.6
     - numbalsoda
     - numba
